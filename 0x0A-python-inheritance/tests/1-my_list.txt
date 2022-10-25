@@ -23,7 +23,7 @@ Checking for method docstring:
 	 True
 
 Checking that MyList inherits from list:
-	 >>> subclass(MyList, list)
+	 >>> issubclass(MyList, list)
 	 True
 
 Checking for empty list:
@@ -31,7 +31,7 @@ Checking for empty list:
 	 >>> l.print_sorted()
 	 []
 
-Checking that appendIng works:
+Checking that appendng works:
 	 >>> l.append(1)
 	 >>> l.append(2)
 	 >>> l.append(3)
@@ -82,6 +82,6 @@ Checking for all negative numbers:
 
 Checking for too many arguments:
 	 >>> l.print_sorted(1)
-	 Trace back (most recent call last):
+	 Traceback (most recent call last):
 	 ...
 	 TypeError: print_sorted() takes 1 positional argument but 2 were given
